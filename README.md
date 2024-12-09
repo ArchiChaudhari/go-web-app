@@ -38,7 +38,7 @@ Docker Build - docker build -t archichaudhari/go-web-app .
 
 Docker Run - docker run -p 80801:80801 -it archichaudhari/go-web-app:v1
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Writing Kubernetes Manifest
 
@@ -48,5 +48,12 @@ Create Folder k8s ->
                   service.yaml
                   ingress.yaml (host based ingress)
 
+To validate kuernetes manifests we will need kuernetes cluster
+
+Using EKS with EC2 instance to create kubernetes cluster
+
+Authenticate AWS with local machine using access keys
+
+eksctl create cluster --name demo-cluster --region us-east-1
 
                       
