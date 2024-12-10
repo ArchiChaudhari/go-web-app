@@ -56,4 +56,5 @@ Using EKS with EC2 instance to create kubernetes cluster
 
 eksctl create cluster --name demo-cluster --region us-east-1
 
-                      
+We can directly deploy the application as pod but it will not create replica sets.
+ 
