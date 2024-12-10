@@ -1,12 +1,12 @@
-## go-web-app
+# go-web-app
 
-# Run the go web app locally
+## Run the go web app locally
 go build -o main .
 ./ main
 
 app will run on port 8081 : http://localhost:8081/courses
 
-# Creating Dockerfile
+## Creating Dockerfile
 Containerizing the go app (Multi Stage Docker Build)
 
 FROM golang:1.23 AS base
@@ -40,7 +40,7 @@ Docker Run - docker run -p 80801:80801 -it archichaudhari/go-web-app:v1
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Writing Kubernetes Manifest
+## Writing Kubernetes Manifest
 
 Create Folder k8s -> 
                 manifests ->
@@ -52,7 +52,7 @@ To validate kuernetes manifests we will need kuernetes cluster
 
 Using EKS with EC2 instance to create kubernetes cluster
 
-Authenticate AWS with local machine using access keys
+## Authenticate AWS with local machine using access keys
 
 eksctl create cluster --name demo-cluster --region us-east-1
 
